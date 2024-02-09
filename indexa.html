@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+
+            min-height: 100vh;
+            min-width: 100vw;
+
+        }
+
+        .conainer {
+            display: grid;
+            grid-template-columns: repeat(17, 1fr);
+            grid-template-rows: repeat(13, 1fr);
+
+            height: 100vh;
+            width: 100vw;
+        }
+
+        [class^="grid-items"] {
+
+            background-color: #000;
+            border: 1px solid #fff;
+            color: #fff;
+
+        }
+
+        [class^="grid-items"]::before {
+            content: attr(class);
+            font-size: 1rem;
+            font-weight: 700;
+            text-align: center;
+            line-height: 1;
+            padding: 1rem;
+        }
+
+        .grid-items1 {
+            grid-row: 1;
+            grid-column: 1 / 4;
+        }
+
+        .grid-items2 {
+            grid-row: 1;
+            grid-column: 4 / 14;
+        }
+
+        .grid-items3 {
+            grid-row: 1;
+            grid-column: 14 / 18;
+        }
+
+        .grid-items4 {
+            grid-row: 2/5;
+            grid-column: 1 / 4;
+        }
+
+        .grid-items5 {
+            grid-row: 2/4;
+            grid-column: 4 / 14;
+        }
+
+        .grid-items6 {
+
+            grid-row: 2/5;
+            grid-column: 14 / 18;
+        }
+
+        .grid-items7 {
+            grid-row: 5/14;
+            grid-column: 1 / 4;
+        }
+
+        .grid-items8 {
+            grid-row: 5/14;
+            grid-column: 4 / 14;
+        }
+
+        .grid-items9 {
+
+            grid-row: 5/14;
+            grid-column: 14 / 18;
+        }
+
+        .grid-items10 {
+            grid-row: 4;
+            grid-column: 4/6;
+        }
+
+        .grid-items11 {
+            grid-row: 4;
+            grid-column: 6/8;
+        }
+
+        .grid-items12 {
+            grid-row: 4;
+            grid-column: 8/10;
+        }
+
+        .grid-items13 {
+            grid-row: 4;
+            grid-column: 10/12;
+        }
+
+        .grid-items14 {
+            grid-row: 4;
+            grid-column: 12/14;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conainer">
+        <div class="grid-items1"></div>
+        <div class="grid-items2"></div>
+        <div class="grid-items3"></div>
+        <div class="grid-items4"></div>
+        <div class="grid-items5"></div>
+        <div class="grid-items6"></div>
+        <div class="grid-items7"></div>
+        <div class="grid-items8"></div>
+        <div class="grid-items9"></div>
+        <div class="grid-items10"></div>
+        <div class="grid-items11"></div>
+        <div class="grid-items12"></div>
+        <div class="grid-items13"></div>
+        <div class="grid-items14"></div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+</body>
+
+
+</html>

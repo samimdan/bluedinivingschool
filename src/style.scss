@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$CMAS-logo: "/src/images/svg/CMASLogo.svg";
+$CMAS-small-logo: "/src/images/svg/cmas-small.svg";
+$SNSI-logo: "/src/images/svg/SNSIREC_2020.svg";
+$SNSI-small-logo: "/src/images/svg/snsi-small.svg";
+$logos: $CMAS-logo, $SNSI-logo, $SNSI-small-logo, $CMAS-small-logo;
+$slides: (
+	url("./image/slide/Bls.jpg"),
+	url("./image/slide/fix-slde.png"),
+	url("./image/slide/freedivebanner.png"),
+	url("./image/slide/dive-under-water.png"),
+	url("./image/slides/repaire.png"),
+	url("./image/slide/sell-side.png"),
+	url("./image/slide/slide-free-dive.png"),
+	url("./image/slide/snsi-progress.png")
+);
+/* ----------------------------- fill the slide ----------------------------- */
+$i: 1;
+@each $slide in $slides {
+	.slide#{$i} {
+	}
+	$i: $i + 1;
+}

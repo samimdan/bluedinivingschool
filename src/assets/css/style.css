@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* ----------------------------- fill the slide ----------------------------- */
+#app {
+  display: grid;
+  display: grid;
+  grid-template-columns: repeat(17, 1fr);
+  grid-template-rows: repeat(13, 1fr);
+  
+  height: 100vh;
+  width: 100vw;
+}
