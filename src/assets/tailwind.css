@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+	font-family: IRANSansX !important;
+	font-size: 12px;
+	line-height: 1.428571429;
+
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+    -webkit--font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
