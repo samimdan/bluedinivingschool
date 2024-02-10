@@ -23,22 +23,23 @@
 		<RouterView />   -->
 </template>
 <script>
-  import { onMounted } from 'vue'
+  import { onMounted } from 'vue';
 
-  import { ref } from 'vue'
-  import { RouterView } from 'vue-router'
-  import LogoLeft from './components/main-section/logo-left.vue'
-  import TopMenu from './components/topmenu.vue'
-  import BannerTop from './components/BannerTop.vue'
-  import LogoRight from './components/main-section/logo-right.vue'
-  import Search from './components/main-section/search.vue'
-  import ProductionSmall from './components/productionsmal.vue'
-  import SiteNavigation from './components/siteNavigation.vue'
+  import { ref } from 'vue';
+  import { RouterView } from 'vue-router';
+  import LogoLeft from './components/main-section/logo-left.vue';
+  import TopMenu from './components/topmenu.vue';
+  import BannerTop from './components/BannerTop.vue';
+  import LogoRight from './components/main-section/logo-right.vue';
+  import Search from './components/main-section/search.vue';
+  import ProductionSmall from './components/productionsmal.vue';
+  import SiteNavigation from './components/siteNavigation.vue';
 
-  import MenuTop from './components/menutop/menutop.vue'
-  import LogIn from './components/sigin/login.vue'
-  import SlideBar from './components/slidebar.vue'
-  import SplitTextJs from 'split-text-js'
+  import MenuTop from './components/menutop/menutop.vue';
+  import LogIn from './components/sigin/login.vue';
+  import SlideBar from './components/slidebar.vue';
+  import SplitTextJs from 'split-text-js';
+  import MigleardAnimation from 'migleardanimation';
   export default {
     name: 'App',
     components: {
@@ -55,20 +56,23 @@
         LogIn: false,
         top: 0,
         left: 0
-      }
+      };
     },
-    mounted() {},
+    mounted() {
+      const ma = new MigleardAnimation();
+      ma.fillobject();
+    },
     methods: {
       showLogin(topPositon, leftPosition) {
-        this.LogIn = true
-        this.top = topPositon
-        this.left = leftPosition
+        this.LogIn = true;
+        this.top = topPositon;
+        this.left = leftPosition;
       },
       loginClose() {
-        this.LogIn = false
+        this.LogIn = false;
       }
     }
-  }
+  };
 </script>
 <style>
   .sal {
